@@ -5,7 +5,7 @@ It systematically generates and explores all possible betting sequences among mu
 
 ## 📌 Features
 
-- 🃏 Simulates a full betting round with any number of players
+- 🃏 Simulates a full betting round with a configurable number of players (small-scale recommended)
 - 📐 Enumerates all valid action sequences (e.g., check, bet, call, fold, raise)
 - 💰 Tracks player contributions and pot growth
 - 🤖 Designed for research in game theory, AI training, and behavior modeling
