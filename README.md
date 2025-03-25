@@ -33,9 +33,11 @@ Sequence: ['b10', 'c', 'f'] → Pot: 80 Sequence: ['x', 'b10', 'f', 'c'] → Pot
 ---
 
 ## 📂 File Structure
-Texas-Hold-em-Betting-Sequence-Generator/ 
-├── Texas_Hold'em_Betting_Sequence_Generator.ipynb ← Main simulation notebook 
-└── README.md ← Project documentation
+```
+Texas-Hold-em-Betting-Sequence-Generator/
+├── Texas_Hold'em_Betting_Sequence_Generator.ipynb  ← Main simulation notebook
+└── README.md                                       ← Project documentation
+```
 
 ---
 
