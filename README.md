@@ -1,54 +1,60 @@
 # ♠️ Texas Hold'em Betting Sequence Generator
 
-This project is a simulation tool built in Google Colab for generating betting sequences in Texas Hold'em poker games. It allows users to explore different player behaviors, action orders, and simulate rounds for strategy research, data analysis, or AI training.
+This project is a simulation tool for modeling betting rounds in Texas Hold'em poker.  
+It systematically generates and explores all possible betting sequences among multiple players, given fixed action rules and constraints. The simulation outputs both the sequence of actions and the resulting pot size.
 
-## 📌 Key Features
+## 📌 Features
 
-- ✅ Written in Python and runs entirely in Colab
-- ✅ Simulates player action sequences across multiple betting rounds
-- ✅ Supports custom number of players and betting stages
-- ✅ Suitable for AI model training, behavior analysis, and strategy simulation
+- 🃏 Simulates a full betting round with any number of players
+- 📐 Enumerates all valid action sequences (e.g., check, bet, call, fold, raise)
+- 💰 Tracks player contributions and pot growth
+- 🤖 Designed for research in game theory, AI training, and behavior modeling
+- 🐍 Written in Python and runnable in Google Colab
 
 ## 🚀 Open in Google Colab
 
-Click the button below to launch and run the notebook in Google Colab:
+Click below to launch this notebook in Colab and run it directly:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/LeonLaigogo/Texas-Hold-em-Betting-Sequence-Generator/blob/main/Texas_Hold'em_Betting_Sequence_Generator.ipynb)
 
 ---
 
-## 📂 Project Structure
+## 🔧 How It Works
 
-# Texas-Hold-em-Betting-Sequence-Generator
-Texas-Hold-em-Betting-Sequence-Generator/ ├── Texas_Hold'em_Betting_Sequence_Generator.ipynb ← Main Colab notebook └── README.md ← This documentation
+- Defines player actions: `Check`, `Call`, `Fold`, `Bet`, `Raise`  
+- Simulates turn-based decisions with game-state cloning
+- Uses recursion to explore all paths until the round ends
+- Outputs all valid action sequences along with resulting pot sizes
+
+Example output:
+Sequence: ['b10', 'c', 'f'] → Pot: 80 Sequence: ['x', 'b10', 'f', 'c'] → Pot: 90 ...
 
 
 ---
 
-## 🔧 How to Use
+## 📂 File Structure
+Texas-Hold-em-Betting-Sequence-Generator/ ├── Texas_Hold'em_Betting_Sequence_Generator.ipynb ← Main simulation notebook └── README.md ← Project documentation
 
-1. Click the “Open in Colab” button above.
-2. Modify parameters inside the notebook to adjust number of players, action order, or rounds.
-3. Run the cells to simulate betting sequences and visualize output.
 
 ---
 
 ## 🧠 Use Cases
 
-- Simulating betting strategies in Texas Hold’em
-- Creating datasets for poker-related AI modeling
-- Behavioral analysis of betting patterns
-- Game rule testing and automated input generation
+- Game theory modeling and equilibrium research
+- Reinforcement learning simulation environment
+- Testing player behavior strategies in simplified settings
+- Teaching material for poker-related decision trees
 
 ---
 
 ## 📬 Contact
 
-For feedback, suggestions, or collaboration, feel free to reach out:  
+If you have feedback or suggestions, feel free to reach out via GitHub:  
 [@LeonLaigogo](https://github.com/LeonLaigogo)
 
 ---
 
 ## ⭐ Like this project?
 
-If you find this useful, consider giving it a ⭐ star on GitHub to support the project!
+If this notebook was helpful, consider giving it a ⭐ on GitHub!
+
